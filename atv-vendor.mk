@@ -5,34 +5,7 @@ include vendor/opengapps/build/opengapps-files.mk
 DEVICE_PACKAGE_OVERLAYS += $(GAPPS_DEVICE_FILES_PATH)/overlay/pico
 
 GAPPS_PRODUCT_PACKAGES += \
-		BugReportSender \
-		ConfigUpdater \
-		GoogleBackupTransport \
-		GoogleContactsSyncAdapter \
-		GoogleServicesFramework \
-		NoTouchAuthDelegate \
-		PrebuiltGmsCorePano \
-		Tubesky \
-		Backdrop \
-		AndroidMediaShell \
-		GlobalKeyInterceptor \
-		TV \
-		Overscan \
-		RemoteControlService \
-		SecondScreenSetup \
-		SecondScreenSetupAuthBridge \
-		talkback \
-		LeanbackLauncher \
-		LeanbackIme \
-		VideosPano \
-		Music2Pano \
-		CanvasPackageInstaller \
-		PlayGames \
-		Katniss \
-		AtvWidget \
-		YouTubeLeanback \
-		SetupWraith \
-		AtvRemoteService
+		
 
 ifneq ($(filter $(call get-allowed-api-levels),23),)
 GAPPS_PRODUCT_PACKAGES += \
